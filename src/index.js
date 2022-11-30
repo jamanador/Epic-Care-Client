@@ -1,13 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import React from "react";
+import "react-day-picker/dist/style.css";
+import ReactDOM from "react-dom/client";
+import { Toaster } from "react-hot-toast";
+import App from "./App";
+import AuthProvider from "./Context/AuthProvider";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const queryCLinet = new QueryClient();
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <QueryClientProvider client={queryCLinet}>
+      <AuthProvider>
+        <App />
+      </AuthProvider>
+    </QueryClientProvider>
+    <Toaster position="top-center"></Toaster>
   </React.StrictMode>
 );
 

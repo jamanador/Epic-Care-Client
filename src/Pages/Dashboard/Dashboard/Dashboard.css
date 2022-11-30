@@ -1,0 +1,11 @@
+/* .dashboard {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  column-gap: 30px !important;
+}
+@media (max-width: 991px) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+  }
+} */
