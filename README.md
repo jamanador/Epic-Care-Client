@@ -1,4 +1,4 @@
-# Full stack Epic care medicale management
+# Full stack medicale management
 
 The mission of epic care is to provide high-quality, safe, and individualized care in an integrated and forward-looking medical facility that at the same time supports the local community..
 
