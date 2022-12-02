@@ -7,7 +7,7 @@ import "./Dashboard.css";
 const Dashboard = () => {
   const { user } = useContext(authContext);
 
-  const url = `http://localhost:5000/bookings?email=${user?.email}`;
+  const url = `${process.env.REACT_APP_SERVER_URL}/bookings?email=${user?.email}`;
 
   const {
     data: bookings = [],

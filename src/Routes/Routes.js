@@ -108,7 +108,9 @@ const Routes = () => {
         {
           path: "/dashboard/payment/:id",
           loader: ({ params }) => {
-            return fetch(`http://localhost:5000/bookings/${params.id}`);
+            return fetch(
+              `${process.env.REACT_APP_SERVER_URL}/bookings/${params.id}`
+            );
           },
           element: (
             <PrivateRoutes>

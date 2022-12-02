@@ -17,7 +17,7 @@ const ManageDoctor = () => {
   } = useQuery({
     queryKey: ["doctors"],
     queryFn: async () => {
-      const res = await fetch("http://localhost:5000/doctors", {
+      const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/doctor`, {
         headers: {
           authorization: `bearer ${localStorage.getItem("accessToken")}`,
         },
@@ -32,7 +32,7 @@ const ManageDoctor = () => {
   }
 
   const handleDelete = (doctor) => {
-    fetch(`http://localhost:5000/doctors/${doctor._id}`, {
+    fetch(`${process.env.REACT_APP_SERVER_URL}/doctors/${doctor._id}`, {
       method: "DELETE",
       headers: {
         authorization: `bearer ${localStorage.getItem("accessToken")}`,

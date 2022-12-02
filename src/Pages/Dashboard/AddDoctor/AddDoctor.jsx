@@ -15,7 +15,7 @@ const AddDoctor = () => {
   const { data: specialties, isLoading } = useQuery({
     queryKey: ["specialty"],
     queryFn: async () => {
-      const res = await fetch("http://localhost:5000/apointmentSpecialty");
+      const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/apointmentSpecialty`);
       const data = await res.json();
       const result = data.data;
       return result;
@@ -43,7 +43,7 @@ const AddDoctor = () => {
             image: imageData.data.url,
           };
           // save information to database
-          fetch(`http://localhost:5000/doctors`, {
+          fetch(`${process.env.REACT_APP_SERVER_URL}/doctors`, {
             method: "POST",
             headers: {
               "content-type": "application/json",

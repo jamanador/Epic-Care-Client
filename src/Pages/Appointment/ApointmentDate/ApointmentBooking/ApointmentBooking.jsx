@@ -32,7 +32,7 @@ const ApointmentBooking = ({
       price,
     };
     setLoading(true);
-    fetch("http://localhost:5000/bookings", {
+    fetch(`${process.env.REACT_APP_SERVER_URL}/bookings`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -7,25 +7,12 @@ import ApointmentDateCard from "./ApointmentDateCard/ApointmentDateCard";
 
 const ApointmentDate = ({ selectedDate }) => {
   const [treatment, setTreatment] = useState(null);
-  // const [apointments, setApointment] = useState([]);
 
-  // useEffect(() => {
-  //   fetch("http://localhost:5000/apointmentOptions")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       if(data.success){
-  //         setApointment(data.data)
-  //       }
-  //       else{
-  //         toast.error(data.error)
-  //       }
-  //     });
-  // }, []);
 const date = format(selectedDate, "PP")
   const { data: apointments = [],refetch,isLoading } = useQuery({
     queryKey: ["apointments",date],
     queryFn: async () => {
-      const res = await fetch(`http://localhost:5000/apointmentOptions?date=${date}`);
+      const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/apointmentOptions?date=${date}`);
       const data = await res.json();
       const result = data.data
       return result;
