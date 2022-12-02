@@ -26,7 +26,6 @@ const Allusers = () => {
           toast.success("Make Admin Successful!");
           refetch();
         }
-        console.log(data.data);
       });
   };
 
@@ -43,7 +42,6 @@ const Allusers = () => {
           toast.success('User Delete Successfully')
           refetch()
         }
-        console.log(data);
       });
   };
 

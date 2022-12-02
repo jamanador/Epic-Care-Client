@@ -24,7 +24,6 @@ const ManageDoctor = () => {
       });
       const data = await res.json();
       const result = data.data;
-      console.log(result);
       return result;
     },
   });

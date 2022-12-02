@@ -23,7 +23,6 @@ const AddDoctor = () => {
   });
   const navigate = useNavigate();
   const handleAddDoctor = (data) => {
-    console.log(data);
     const image = data.image[0];
     const formData = new FormData();
     formData.append("image", image);

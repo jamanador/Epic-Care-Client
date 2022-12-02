@@ -22,11 +22,9 @@ const Login = () => {
     navigate(from, { replace: true });
   }
   const handleLogin = (data) => {
-    console.log(data);
     signIn(data.email, data.password)
       .then((result) => {
         const user = result.user;
-        console.log(user);
         setLoginUserEmail(data.email);
         toast.success("Successfully log in");
         // navigate(from, { replace: true });

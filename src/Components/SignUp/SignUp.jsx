@@ -20,11 +20,9 @@ const SignUp = () => {
   } = useForm();
 
   const handleSignUp = (data) => {
-    console.log(data);
     createUser(data.email, data.password)
       .then((result) => {
         const user = result.user;
-        console.log(user);
         const userInfo = {
           displayName: data.name,
         };
@@ -53,7 +51,6 @@ const SignUp = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        // console.log('saveuserinfo',data);
         setCreatedUserEmail(email);
       });
   };

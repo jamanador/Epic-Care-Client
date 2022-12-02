@@ -87,7 +87,6 @@ const CheckoutForm = ({ bookings }) => {
           }
         });
     }
-    // console.log("paymentIntent", paymentIntent);
     setLoading(false);
   };
 

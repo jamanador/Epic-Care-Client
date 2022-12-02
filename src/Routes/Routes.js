@@ -1,5 +1,6 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ErrorPage from "../Components/ErrorPage/ErrorPage";
 import Login from "../Components/Login/Login";
 import SignUp from "../Components/SignUp/SignUp";
 import Appoinment from "../Pages/Appointment/Appoinment";
@@ -20,6 +21,7 @@ const Routes = () => {
     {
       path: "/",
       element: <Root></Root>,
+      errorElement: <ErrorPage></ErrorPage>,
       children: [
         {
           path: "/",
@@ -56,6 +58,7 @@ const Routes = () => {
 
     {
       path: "/dashboard",
+      errorElement: <ErrorPage></ErrorPage>,
       element: (
         <PrivateRoutes>
           <RootDashboard></RootDashboard>

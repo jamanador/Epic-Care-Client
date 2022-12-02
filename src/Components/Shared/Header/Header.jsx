@@ -1,4 +1,4 @@
-import { FolderArrowDownIcon, UserCircleIcon } from "@heroicons/react/24/solid";
+import { UserCircleIcon } from "@heroicons/react/24/solid";
 import React, { useContext } from "react";
 import toast from "react-hot-toast";
 import { Link, NavLink } from "react-router-dom";
@@ -48,10 +48,17 @@ const Header = () => {
             <NavLink to="/apointment">Apoinment</NavLink>
 
             <NavLink to="/riviews">Reviews</NavLink>
+            {user && user.uid && (
+              <>
+                <label htmlFor="my-drawer-2" tabIndex={3} className="lg:hidden">
+                  <span className="ml-3">Dashboard</span>
+                </label>
+              </>
+            )}
           </div>
         </div>
         <p className="">
-          <Link className="font-bold text-sm md:text-xl">
+          <Link to="/" className="font-bold text-sm md:text-xl">
             Epic Care{" "}
             <span className="md:text-5xl text-2xl  text-primary">•</span>
           </Link>
@@ -82,9 +89,6 @@ const Header = () => {
               {" "}
               <UserCircleIcon className="w-5 h-5 text-white bg-accent rounded-full m-2 active"></UserCircleIcon>
             </Link>
-            <label htmlFor="my-drawer-2" tabIndex={3} className="lg:hidden">
-              <FolderArrowDownIcon className="w-5 h-5"></FolderArrowDownIcon>
-            </label>
           </>
         ) : (
           <>
