@@ -31,11 +31,11 @@ Hosted in Firebase Live Link -> [Epic Care](https://epic-care.web.app/)
 
 Full Project Detail View ->
 
-![image](https://i.ibb.co/b3ST1ym/Linkeding-Project.png)
-![image](https://i.ibb.co/yggG63x/apoinment-page.png)
-![image](https://i.ibb.co/1d0YkKs/apoinmetdone.png)
+![image](https://i.ibb.co/1nD1ZpQ/Linkeding-Project.png)
+![image](https://i.ibb.co/vLLg3tM/apoinment-page.png)
+![image](https://i.ibb.co/QCJ74n8/apoinmetdone.png)
 ![image](https://i.ibb.co/yRrhwSJ/addnew-Doctor.png)
-![image](https://i.ibb.co/vYP3JXR/allusers.png)
+![image](https://i.ibb.co/wsWSKcj/allusers.png)
 
 ## Resources & Credits
 
