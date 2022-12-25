@@ -29,14 +29,6 @@ Hosted in Firebase Live Link -> [Epic Care](https://epic-care.web.app/)
   - Databse-mongoDB
   - Firebase
 
-Full Project Detail View ->
-
-![image](https://i.ibb.co/1nD1ZpQ/Linkeding-Project.png)
-![image](https://i.ibb.co/vLLg3tM/apoinment-page.png)
-![image](https://i.ibb.co/QCJ74n8/apoinmetdone.png)
-![image](https://i.ibb.co/yRrhwSJ/addnew-Doctor.png)
-![image](https://i.ibb.co/wsWSKcj/allusers.png)
-
 ## Resources & Credits
 
 Taillwind Components ->
@@ -45,3 +37,11 @@ Taillwind Components ->
 ## Other Resources
 
 Icon -> [HeroIcon](https://heroicons.com/)
+
+Full Project Detail View ->
+
+![image](https://i.ibb.co/1nD1ZpQ/Linkeding-Project.png)
+![image](https://i.ibb.co/vLLg3tM/apoinment-page.png)
+![image](https://i.ibb.co/QCJ74n8/apoinmetdone.png)
+![image](https://i.ibb.co/yRrhwSJ/addnew-Doctor.png)
+![image](https://i.ibb.co/wsWSKcj/allusers.png)
